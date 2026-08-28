@@ -6,34 +6,39 @@ Most MIR (Music Information Retrieval) tools require programming, signal process
 This project was originally built as a course project for CSC 475 (Music Information Retrieval) by Jonathan Kiss, Abby Hunter, and Makenna Clarke. This fork/repo covers the tempo, pitch, dynamics, and PyQt6 GUI modules.
 
 ## Features
-Tempo: estimates BPM and beat positions from spectral flux/onset strength, refined via smoothing and peak-picking; time-stretch the track with a phase vocoder, preserving pitch.
-Pitch: extracts the fundamental frequency (f0) contour with the YIN algorithm, smoothed with a Savitzky–Golay filter; shift pitch up or down by semitones via phase-vocoder pitch-shifting, independent of tempo.
-Dynamics: computes short-time RMS loudness (dB) and spectral centroid (perceived brightness) curves; apply gain, RMS-adaptive dynamic scaling, brightness-aware modulation, and compression, then peak-normalizes to avoid clipping.
-Graph windows: every analysis and modification opens in its own resizable plot window with a live playback-position indicator, Play/Stop controls, and a Save Graph button (PNG/PDF/SVG export).
-Apply All: chains any combination of the three modifications (Tempo → Pitch → Dynamics) in one pass.
-Playback: play the original or modified audio directly from the app.
-Export: save the modified audio as a .wav file.
+Tempo: estimates BPM and beat positions from spectral flux/onset strength, refined via smoothing and peak-picking; time-stretch the track with a phase vocoder, preserving pitch.   
+
+Pitch: extracts the fundamental frequency (f0) contour with the YIN algorithm, smoothed with a Savitzky–Golay filter; shift pitch up or down by semitones via phase-vocoder pitch-shifting, independent of tempo.    
+
+Dynamics: computes short-time RMS loudness (dB) and spectral centroid (perceived brightness) curves; apply gain, RMS-adaptive dynamic scaling, brightness-aware modulation, and compression, then peak-normalizes to avoid clipping.  
+
+Graph windows: every analysis and modification opens in its own resizable plot window with a live playback-position indicator, Play/Stop controls, and a Save Graph button (PNG/PDF/SVG export).    
+
+Apply All: chains any combination of the three modifications (Tempo → Pitch → Dynamics) in one pass.    
+
+Playback: play the original or modified audio directly from the app.    
+
+Export: save the modified audio as a .wav file.    
 
 ## Installation
-git clone https://github.com/jonathank256/MIRACLE.git
-cd MIRACLE
-python -m venv .venv
-.venv\Scripts\Activate.ps1      # Windows PowerShell
-# source .venv/bin/activate     # macOS/Linux
+git clone https://github.com/jonathank256/MIRACLE.git    
+cd MIRACLE    
+python -m venv .venv    
+.venv\Scripts\Activate.ps1    
 
-pip install -r requirements.txt
+pip install -r requirements.txt    
 
-This project was developed and tested on Python 3.14.
+This project was developed and tested on Python 3.14.    
 
-## Usage
-python mir_gui.py
+## Usage    
+python mir_gui.py    
 
-1. Click Load Audio and select a .wav or .mp3 file.
-2. Click Analyze under any section (Tempo / Pitch / Dynamics) to extract that feature.
-3. Click View Graph to inspect the analysis, or adjust the parameters and click Modify to apply a change.
-4. Click Mod Graph to compare original vs. modified.
-5. Tick Enable on any sections you want included, then click Apply All to chain them together.
-6. Use Play Original / Play Modified / Stop to preview, and Save Modified Audio to export.
+1. Click Load Audio and select a .wav or .mp3 file.    
+2. Click Analyze under any section (Tempo / Pitch / Dynamics) to extract that feature.    
+3. Click View Graph to inspect the analysis, or adjust the parameters and click Modify to apply a change.    
+4. Click Mod Graph to compare original vs. modified.    
+5. Tick Enable on any sections you want included, then click Apply All to chain them together.    
+6. Use Play Original / Play Modified / Stop to preview, and Save Modified Audio to export.    
 
 ## Requirements
 See requirments.txt. Core dependencies: PyQt6, libroas, soundfile, sounddevice, matplotlib, numpy, numba.
