@@ -5,6 +5,8 @@ Most MIR (Music Information Retrieval) tools require programming, signal process
 
 This project was originally built as a course project for CSC 475 (Music Information Retrieval) by Jonathan Kiss, Abby Hunter, and Makenna Clarke. This fork/repo covers the tempo, pitch, dynamics, and PyQt6 GUI modules.
 
+<img width="746" height="772" alt="Screenshot 2026-10-08 105150" src="https://github.com/user-attachments/assets/b8e1dff0-962f-432c-aa08-bb270b99b205" />
+
 ## Features
 Tempo: estimates BPM and beat positions from spectral flux/onset strength, refined via smoothing and peak-picking; time-stretch the track with a phase vocoder, preserving pitch.   
 
@@ -19,6 +21,8 @@ Apply All: chains any combination of the three modifications (Tempo â†’ Pitch â†
 Playback: play the original or modified audio directly from the app.    
 
 Export: save the modified audio as a .wav file.    
+
+<img width="864" height="574" alt="Screenshot 2026-10-08 105240" src="https://github.com/user-attachments/assets/dc3889fc-a468-4efc-a0ab-383f56cb78c1" />
 
 ## Installation
 git clone https://github.com/jonathank256/MIRACLE.git    
