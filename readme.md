@@ -41,4 +41,4 @@ python mir_gui.py
 6. Use Play Original / Play Modified / Stop to preview, and Save Modified Audio to export.    
 
 ## Requirements
-See requirements.txt. Core dependencies: PyQt6, libroas, soundfile, sounddevice, matplotlib, numpy, numba.
+See requirements.txt. Core dependencies: PyQt6, librosa, soundfile, sounddevice, matplotlib, numpy, numba.
