@@ -1,4 +1,6 @@
 # MIRACLE
+Status: Complete
+
 MIRACLE is a desktop GUI for exploring and modifying core musical features of audio files, including tempo, pitch, and dynamics, that was built using PyQt6, librosa, and matplotlib.
 
 Most MIR (Music Information Retrieval) tools require programming, signal processing, and music theory knowledge to use. MIRACLE wraps standard MIR techniques (such as beat tracking, pitch estimation via YIN, RMS/spectral-centroid dynamics analysis, and pitch-shifting) in a user-friendly GUI, so that anyone can upload a track, analyze it, hear and see the effect of the modifications, and export the result, all without touching code.
