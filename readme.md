@@ -3,7 +3,7 @@ MIRACLE is a desktop GUI for exploring and modifying core musical features of au
 
 Most MIR (Music Information Retrieval) tools require programming, signal processing, and music theory knowledge to use. MIRACLE wraps standard MIR techniques (such as beat tracking, pitch estimation via YIN, RMS/spectral-centroid dynamics analysis, and pitch-shifting) in a user-friendly GUI, so that anyone can upload a track, analyze it, hear and see the effect of the modifications, and export the result, all without touching code.
 
-This project was originally built as a course project for CSC 475 (Music Information Retrieval) by Jonathan Kiss, Abby Hunter, and Makenna Clarke. This fork/repo covers the tempo, pitch, dynamics, and PyQt6 GUI modules.
+This project was originally built as a course project for CSC 475 (Music Information Retrieval) by Jonathan Kiss, Abby Hunter, and Makenna Clarke. This repo covers the tempo, pitch, dynamics, and PyQt6 GUI modules.
 
 <img width="746" height="772" alt="Screenshot 2026-10-08 105150" src="https://github.com/user-attachments/assets/b8e1dff0-962f-432c-aa08-bb270b99b205" />
 
